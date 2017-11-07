@@ -65,7 +65,7 @@
                             <label for="captcha" class="col-md-4 control-label">验证码</label>
 
                             <div class="col-md-6">
-                                <input id="captcha" class="form-control" name="captcha" >
+                                <input type="hidden" id="captcha" class="form-control" name="captcha" >
 
                                 <img class="thumbnail captcha" src="{{ captcha_src('inverse') }}" onclick="this.src='/captcha/inverse?'+Math.random()" title="点击图片重新获取验证码">
 
