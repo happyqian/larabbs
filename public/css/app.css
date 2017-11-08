@@ -8365,7 +8365,7 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 60px;
@@ -8392,5 +8392,11 @@ body {
   margin-bottom: 0px;
   margin-top: 10px;
   cursor: pointer;
+}
+
+/* User profile page */
+
+.users-show-page .user-info .thumbnail {
+  margin-bottom: 0px;
 }
 
