@@ -11,6 +11,9 @@
 |
 */
 
+
+Route::get('/test','HappyController@index');
+
 Route::get('/','PagesController@root')->name('root');
 
 // Authentication Routes...
