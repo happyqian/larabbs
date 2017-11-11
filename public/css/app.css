@@ -8838,6 +8838,7 @@ body {
   width: 100%;
   height: 60px;
   background-color: #000;
+  z-index: 999;
 }
 
 .footer .container {
@@ -8866,6 +8867,15 @@ body {
 
 .users-show-page .user-info .thumbnail {
   margin-bottom: 0px;
+}
+
+.users-show-page .meta {
+  font-size: .9em;
+  color: #b3b3b3;
+}
+
+.users-show-page .reply-content {
+  margin: 6px 0;
 }
 
 /* Topic Index Page */
@@ -8933,5 +8943,19 @@ body {
 
 .users-show-page .pagination {
   margin: 12px 0;
+}
+
+.topic-reply hr {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.topic-reply a {
+  color: inherit;
+}
+
+.topic-reply .meta {
+  font-size: .9em;
+  color: #b3b3b3;
 }
 

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @yield('styles')
 </head>
-    <div class="{{ route_class() }}-page" id="app">
+    <div class="{{ route_class() }}-page" id="app" style="padding-bottom:100px;">
         @include('layouts._header')
         <div class="container">
             @include('layouts._message')
