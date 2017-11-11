@@ -9,6 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    @yield('styles')
 </head>
     <div class="{{ route_class() }}-page" id="app">
         @include('layouts._header')
@@ -22,4 +23,5 @@
 
     <!-- Script -->
     <script src="{{ mix('js/app.js') }}"></script>
+    @yield('scripts')
 </html>
