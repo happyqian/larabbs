@@ -15,7 +15,6 @@ class UsersController extends Controller
     }
     public function show(User $user)
     {
-        dump($user->toArray());
         return view('users.show',compact('user'));
     }
 
