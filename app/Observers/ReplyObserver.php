@@ -9,13 +9,10 @@ use App\Models\Reply;
 
 class ReplyObserver
 {
-    public function creating(Reply $reply)
+    public function created(Reply $reply)
     {
-        //
+        $reply->topic->increment('reply_count',1);
     }
 
-    public function updating(Reply $reply)
-    {
-        //
-    }
+
 }
