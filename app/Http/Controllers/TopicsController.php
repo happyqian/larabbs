@@ -41,7 +41,7 @@ class TopicsController extends Controller
 		$topic->user_id = Auth::id();
 		$topic->save();
 
-		return redirect()->route('topics.show', $topic->id)->with('success', '成功创建话题！');
+		return redirect()->to($topic->link())->with('success', '成功创建话题！');
 	}
 
     public function uploadImage(Request $request,ImageUploadHandler $uploader)
@@ -76,7 +76,7 @@ class TopicsController extends Controller
 		$this->authorize('update', $topic);
 		$topic->update($request->all());
 
-		return redirect()->route('topics.show', $topic->id)->with('success', '更新成功！');
+		return redirect()->to($topic->link())->with('success', '更新成功！');
 	}
 
 	public function destroy(Topic $topic)
